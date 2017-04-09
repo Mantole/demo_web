@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Galery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">  <!-- To ensure proper rendering and touch zooming on mobile devices --> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>  <!-- jQuery library -->
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  <!-- Latest compiled JavaScript -->
+  <script src="scripts/main.js"></script>  <!--script file-->
+   <link rel="icon" href="images/logo.png" />
+  <link rel="stylesheet" href="styles/main.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- social icons library -->
+</head>
+
+<body>
+
+<div class="mainContainer">
+<header>
+  <img id="mainLogo" src="images/mainLogo.png" alt="Main Logo" />
+</header>
+
+<!--top navigation-->
+<nav id="navTop">
+  <ul id="mainNav">
+    <li><a href="home.html"><i class="fa fa-home"></i> Home</a></li>
+    <li><a class="selected" href="galery.html"><i class="fa fa-photo"></i> Galery</a></li>
+    <li><a href="prices.html"><i class="fa fa-star-o"></i> Prices</a></li>
+    <li><a href="contactUs.html"><i class="fa fa-envelope"></i> Contact us</a></li>	
+  </ul>
+</nav>
+
+<!--galery images resized all in one window-->
+<div class="galeryContent">
+  <div class="imagesContainer">
+    <div class="item"> <img onclick="currentSlide(1)" class="imageSmall" src="images/img1.jpg" alt="image" width="218" height="218" /></div>
+    <div class="item"> <img onclick="currentSlide(2)" class="imageSmall" src="images/img2.jpg" alt="image" width="218" height="218" /></div>
+    <div class="item"> <img onclick="currentSlide(3)" class="imageSmall" src="images/img3.jpg" alt="image" width="218" height="218" /></div>
+    <div class="item"> <img onclick="currentSlide(4)" class="imageSmall" src="images/img4.jpg" alt="image" width="218" height="218" /></div>
+    <div class="item"> <img onclick="currentSlide(5)" class="imageSmall" src="images/img5.jpg" alt="image" width="218" height="218" /></div>
+    <div class="item"> <img onclick="currentSlide(6)" class="imageSmall" src="images/img6.jpg" alt="image" width="218" height="218" /></div>
+    <div class="item"> <img onclick="currentSlide(7)" class="imageSmall" src="images/img7.jpg" alt="image" width="218" height="218" /></div>
+    <div class="item"> <img onclick="currentSlide(8)" class="imageSmall" src="images/img8.jpg" alt="image" width="218" height="218" /></div>
+    <div class="item"> <img onclick="currentSlide(9)" class="imageSmall" src="images/img9.jpg" alt="image" width="218" height="218" /></div>
+    <div class="item"> <img onclick="currentSlide(10)" class="imageSmall" src="images/img10.jpg" alt="image" width="218" height="218" /></div>
+    <div class="item"> <img onclick="currentSlide(11)" class="imageSmall" src="images/img11.jpg" alt="image" width="218" height="218" /></div>
+    <div class="item"> <img onclick="currentSlide(12)" class="imageSmall" src="images/img12.jpg" alt="image" width="218" height="218" /></div>
+	<div class="item"> <img onclick="currentSlide(13)" class="imageSmall" src="images/img13.jpg" alt="image" width="218" height="218" /></div>
+    <div class="item"> <img onclick="currentSlide(14)" class="imageSmall" src="images/img14.jpg" alt="image" width="218" height="218" /></div>
+    <div class="item"> <img onclick="currentSlide(15)" class="imageSmall" src="images/img15.jpg" alt="image" width="218" height="218" /></div>
+    <div class="item"> <img onclick="currentSlide(16)" class="imageSmall" src="images/img16.jpg" alt="image" width="218" height="218" /></div>
+    <div class="item"> <img onclick="currentSlide(17)" class="imageSmall" src="images/img17.jpg" alt="image" width="218" height="218" /></div>
+	<div class="item"> <img onclick="currentSlide(18)" class="imageSmall" src="images/img18.jpg" alt="image" width="218" height="218" /></div>
+    <div class="item"> <img onclick="currentSlide(19)" class="imageSmall" src="images/img19.jpg" alt="image" width="218" height="218" /></div>
+    <div class="item"> <img onclick="currentSlide(20)" class="imageSmall" src="images/img20.jpg" alt="image" width="218" height="218" /></div>
+  </div>
+  
+<!--galery image preview in dark background when clicked on image-->
+  <div class="darkBg">
+  <img class="close" src="images/close.png" alt="close" style="height: 25px; width: 25px;"/>
+    <span class="helper"></span>
+    <div class="slideshow-container">
+	
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 20</div>
+        <img alt="image" class="image" src="images/img1.jpg"/>
+        <div class="text">Picture description</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 20</div>
+        <img alt="image" class="image" src="images/img2.jpg"/>
+        <div class="text">Picture description</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 20</div>
+        <img alt="image" class="image" src="images/img3.jpg"/>
+        <div class="text">Picture description</div>
+      </div>
+	  
+	  <div class="mySlides fade">
+        <div class="numbertext">4 / 20</div>
+        <img alt="image" class="image" src="images/img4.jpg"/>
+        <div class="text">Picture description</div>
+      </div>
+	  
+	  <div class="mySlides fade">
+        <div class="numbertext">5 / 20</div>
+        <img alt="image" class="image" src="images/img5.jpg"/>
+        <div class="text">Picture description</div>
+      </div>
+	  
+	  <div class="mySlides fade">
+        <div class="numbertext">6 / 20</div>
+        <img alt="image" class="image" src="images/img6.jpg"/>
+        <div class="text">Picture description</div>
+      </div>
+	  
+	  <div class="mySlides fade">
+        <div class="numbertext">7 / 20</div>
+        <img alt="image" class="image" src="images/img7.jpg"/>
+        <div class="text">Picture description</div>
+      </div>
+	  
+	  <div class="mySlides fade">
+        <div class="numbertext">8 / 20</div>
+        <img alt="image" class="image" src="images/img8.jpg"/>
+        <div class="text">Picture description</div>
+      </div>
+	  
+	  <div class="mySlides fade">
+        <div class="numbertext">9 / 20</div>
+        <img alt="image" class="image" src="images/img9.jpg"/>
+        <div class="text">Picture description</div>
+      </div>
+	  
+	  <div class="mySlides fade">
+        <div class="numbertext">10 / 20</div>
+        <img alt="image" class="image" src="images/img10.jpg"/>
+        <div class="text">Picture description</div>
+      </div>
+	  
+	  <div class="mySlides fade">
+        <div class="numbertext">11 / 20</div>
+        <img alt="image" class="image" src="images/img11.jpg"/>
+        <div class="text">Picture description</div>
+      </div>
+	  
+	  <div class="mySlides fade">
+        <div class="numbertext">12 / 20</div>
+        <img alt="image" class="image" src="images/img12.jpg"/>
+        <div class="text">Picture description</div>
+      </div>
+	  
+	  <div class="mySlides fade">
+        <div class="numbertext">13 / 20</div>
+        <img alt="image" class="image" src="images/img13.jpg"/>
+        <div class="text">Picture description</div>
+      </div>
+	  
+	  <div class="mySlides fade">
+        <div class="numbertext">14 / 20</div>
+        <img alt="image" class="image" src="images/img14.jpg"/>
+        <div class="text">Picture description</div>
+      </div>
+	  
+	  <div class="mySlides fade">
+        <div class="numbertext">15 / 20</div>
+        <img alt="image" class="image" src="images/img15.jpg"/>
+        <div class="text">Picture description</div>
+      </div>
+	  
+	  <div class="mySlides fade">
+        <div class="numbertext">16 / 20</div>
+        <img alt="image" class="image" src="images/img16.jpg"/>
+        <div class="text">Picture description</div>
+      </div>
+	  
+	  <div class="mySlides fade">
+        <div class="numbertext">17 / 20</div>
+        <img alt="image" class="image" src="images/img17.jpg"/>
+        <div class="text">Picture description</div>
+      </div>
+	  
+	  <div class="mySlides fade">
+        <div class="numbertext">18 / 20</div>
+        <img alt="image" class="image" src="images/img18.jpg"/>
+        <div class="text">Picture description</div>
+      </div>
+	  
+	  <div class="mySlides fade">
+        <div class="numbertext">19 / 20</div>
+        <img alt="image" class="image" src="images/img19.jpg"/>
+        <div class="text">Picture description</div>
+      </div>
+	  
+	  <div class="mySlides fade">
+        <div class="numbertext">20 / 20</div>
+        <img alt="image" class="image" src="images/img20.jpg"/>
+        <div class="text">Picture description</div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+  </div>
+</div>
+</div>
+
+<!--bottom navigation in footer-->
+<footer>
+<nav id="navBottomLeft">
+  <ul id="mainNav">
+    <li><a href="home.html">Home</a></li>
+	<li>|</li>
+    <li><a href="galery.html">Galery</a></li>
+    <li>|</li>	
+    <li><a href="prices.html">Prices</a></li>
+	<li>|</li>
+    <li><a href="contactUs.html">Contact us</a></li>	
+  </ul>
+</nav>
+  
+<nav id="navBottomRight">
+  <ul id="mainNav">
+    <li><a href="https://www.youtube.com" target="_blank" class="soc fa fa-youtube"></a></li>
+    <li><a href="https://www.instagram.com" target="_blank" class="soc fa fa-instagram"></a></li>
+    <li><a href="https://www.twitter.com" target="_blank" class="soc fa fa-twitter"></a></li>
+	<li><a href="https://www.facebook.com" target="_blank" class="soc fa fa-facebook"></a></li>
+  </ul>
+</nav>
+
+<div id="powered">Powered by <a href="http://www.mantasramanauskas.com" target="_blank"> M.R.</a></div>
+
+</footer>
+
+<!--Slide show-->
+<script>
+  var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  slides[slideIndex-1].style.display = "block";  
+}
+</script>
+</body>

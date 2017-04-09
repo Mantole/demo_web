@@ -1,0 +1,731 @@
+
+body {
+  background-image: url("bg.jpg");
+  background-repeat: repeat;
+}
+
+#mainLogo {
+  width: 100%;
+  height: 140px;
+}
+
+.mainContainer {
+  color: white;
+  background-color: #666666;
+  max-width: 900px;
+  margin: auto;
+  margin-top: -8px;
+  overflow: hidden;
+  min-height: 900px;
+}
+
+/*----------------------------------------------------- Main top navigation*/
+#navTop #mainNav {
+  position: relative;
+  list-style-type: none;
+  margin-top: -21px;
+  padding: 0;
+} 
+
+#navTop #mainNav li {
+  float: left;
+}
+
+#navTop #mainNav li a {
+  height: 30px;
+  background: #006600; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#0d0d0d, #006600); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#0d0d0d, #006600); /* For Opera 11.1 to 12.0 */
+  background: -mozlinear-gradient(#0d0d0d, #006600); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#0d0d0d, #006600); /* Standard syntax */
+  display: block;
+  width: 225px;
+  padding: 15px 0px 0px 0px;
+  text-align: center;
+}
+
+#navTop #mainNav li a {
+  height: 30px;
+  width: 225px;
+  font-size: 18px;
+  font-variant: small-caps;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  color: rgb(255, 255, 255); /*white*/
+}
+
+#navTop #mainNav li a.selected {
+  color: rgb(255, 255, 155); /*white*/
+  background: #009900; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#0d0d0d, #009900); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#0d0d0d, #009900); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#0d0d0d, #009900); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#0d0d0d, #009900); /* Standard syntax */
+}
+
+#navTop #mainNav li a:hover {
+  background: #009900; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#0d0d0d, #009900); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#0d0d0d, #009900); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#0d0d0d, #009900); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#0d0d0d, #009900); /* Standard syntax */
+}
+
+footer {
+  margin: auto;
+  display: block;
+  color: rgb(255, 255, 255); /*white*/
+  max-width: 900px;
+  height: 150px;
+  margin-bottom: -10px;
+  background: #006600; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#006600, #0d0d0d); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#006600, #0d0d0d); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#006600, #0d0d0d); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#0d0d0d, #006600); /* Standard syntax */
+  border-radius: 0 0 10px 10px;
+}
+
+/* content in home page */
+
+#homeContent {
+
+  max-width: 70%;
+  margin: 10% auto 10% auto;
+  text-align: center;
+}
+
+.first {
+  font-size: 1.25em;
+  margin: 5% auto 0% auto;
+}
+
+#interested a {
+  color: white;
+}
+
+#interested a:hover {
+  color: yellow;
+}
+
+/*-------------------------------------------------bottom nav social networks icons*/
+
+.soc {
+  padding: 10px 10px 10px 10px;
+  font-size: 500px;
+  border-radius: 50%;
+  background: rgb(0, 0, 0);
+  border: 1px solid white;
+}
+
+.fa-facebook{
+  padding: 10px 13px 10px 13px;
+  background: rgb(0, 0, 0);
+}
+
+.fa-facebook:hover {
+  background: rgb(0, 122, 204);
+}
+
+.fa-twitter:hover {
+  background: rgb(0, 153, 153);
+}
+
+.fa-youtube:hover {
+  background: rgb(230, 0, 0);
+}
+
+.fa-instagram:hover {
+  background: rgb(0, 204, 68);
+}
+
+/*--------------------------------------------------------- Nav in footer top left */
+#navBottomLeft ul { 
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#navBottomLeft ul li {
+  float: left;
+  padding: 0.6em;
+}
+
+#navBottomLeft li a {
+  display: block;
+  color: rgb(255, 255, 255); /*white*/
+  text-decoration: none;
+}
+
+#navBottomLeft li a:hover {
+  text-decoration: underline;
+}
+
+/*--------------------------------------------------------- social icons in footer */
+#navBottomRight ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#navBottomRight li {
+  padding-top: 0.3em;
+  padding-right: 1em;
+  float: right;
+}
+
+#navBottomRight li a {
+  margin-top: 45%;
+  display: block;
+  color: rgb(255, 255, 255); /*white*/
+  text-decoration: none;
+}
+
+/*-------------------------------------------------- powered by */
+#powered {
+  background: rgba(76, 175, 80, 0);
+  font: italic 13px verdana;
+  position: relative;
+  margin: auto;
+  text-align: center;
+  clear: right;
+  top: 30%;
+}
+
+#powered a {
+  font: italic 13px verdana;
+  color: rgb(255, 255, 255); /*white*/
+  text-decoration: none;
+}
+
+#powered a:hover {
+  text-decoration: underline;
+}
+
+/*-------------------------------------------------- dark background when vieving images */
+.darkBg {
+  background-color: rgba(0, 0, 0, 0.9);
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0px;
+  display: none;
+}
+
+.galeryContent {
+  text-align: center; /*centering images in galery*/
+}
+
+.item {
+  cursor: pointer;
+  position: relative;
+  border: 2px solid black;
+  overflow: hidden;
+  width: 218px;
+  height: 218px;
+  display: inline-block;
+}
+
+.imageSmall {
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+/*----------------------------------------------------- zooming image on hover */
+.item:hover .imageSmall {
+  transform: scale(1.1);
+}
+
+/*----------------------------------------------------- Slideshow container */
+.slideshow-container {
+  -webkit-display: flex;
+  -ms-display: flex;
+  display: flex;
+  position: relative;
+  top: 5%;
+  background-color: black;
+  max-width: 800px;
+  min-height: 800px;
+  margin: auto;
+}
+
+.mySlides {
+  margin: auto;
+}
+
+/*-------------------------------------------------- setting up images max-height when showing in dark background */
+.image {
+  max-height: 700px;
+  width:100%;
+  
+}
+
+/*------------------------------------------------------ Next & previous buttons */
+.prev, .next {
+  background-color: rgba(0,0,0,0.1);
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: rgb(255, 255, 255); /*white*/
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-transition: 0.6s ease;
+  -moz-transition: 0.6s ease;
+  -o-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/*------------------------------------------------------ Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 5px 0 0 5px;
+}
+
+.prev {
+  left: 0;
+  border-radius: 0 5px 5px 0;
+}
+
+/*------------------------------------------------------- button - closing dark bg */
+.close {
+  border-radius: 100%;
+  cursor: pointer;
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  background-color: rgb(166, 166, 166); /*grey*/
+  -o-transition: background-color 0.1s linear;
+  -moz-transition: background-color 0.1s linear;
+  -webkit-transition: background-color 0.1s linear;
+  transition: background-color 0.1s linear;
+}
+
+.close:hover {
+  background-color: rgb(255, 255, 255); /*white*/
+}
+
+/*------------------------------------------------------- On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/*-------------------------------------------------------- Caption text */
+.text {
+  background-color: rgba(51, 51, 51, 1);
+  color: #f2f2f2;
+  font-size: 15px;
+  position: relative;
+  width: 100%;
+  line-height: 30px;
+  text-align: center;
+  bottom: 3px;
+}
+
+/*---------------------------------------------------------- Number text (1/5 etc) dispplay: none for now */
+.numbertext {
+  color: rgb(255, 255, 255); /*white*/
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 5px;
+  display: none;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+/*---------------------------------------------------------- Go ahead send us a message! */
+.sendUs {
+  float: right;
+  position: relative;
+  right: 100px;
+  top: 20px;
+}
+
+/*---------------------------------------------------------- Contact lines email, phone, address */
+.contactInfo {
+  float: right;
+  position: relative;
+  top: 250px;
+}
+
+.contactInfo fieldset {
+  font-weight: normal;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 20px;
+  border-radius: 5px;
+  border: 1px solid rgb(255, 255, 255); /*white*/
+  margin: 0px -150px 10px 0px;
+  text-align: center;
+  background-color: rgb(16, 99, 16); /*dark green*/
+  box-shadow: 10px 10px 5px #888888;
+  width: 270px;
+}
+
+.contactInfo fieldset span {
+  font-weight: normal;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  width: 270px;
+}
+
+/*----------------------------------------------------------- Contact us form */
+.form {
+  position: relative;
+  left: 50px;
+  top: 50px;
+  float: left;
+  height: 600px;
+}
+
+.form fieldset {
+  width:400px;
+  border-radius: 5px;
+  border: 1px solid rgb(255, 255, 255); /*white*/
+  margin: 0px 0px 10px 0px;
+  text-align: center;
+  background-color: rgb(16, 99, 16); /*dark green*/
+  box-shadow: 10px 10px 5px #888888;
+}
+
+fieldset legend {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 16px;
+  background-color: rgb(16, 99, 16); /*dark green*/
+  border-top: 1px solid rgb(255, 255, 255); /*white*/
+  border-left: 1px solid rgb(255, 255, 255); /*white*/
+  border-right: 1px solid rgb(255, 255, 255); /*white*/
+  border-radius: 5px 5px 0px 0px;
+  padding: 5px 10px 10px 10px;
+}
+
+fieldset span {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  float: left;
+  width: 100px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+
+.inputField {
+  display: block;
+  width:50%;
+  border-radius: 3px;
+  border: 1px solid rgb(0, 0, 0); /*black*/
+  background-color: rgb(203, 244, 203); /*light green*/
+  padding: 5px 8px 5px 8px;	
+}
+
+.inputField:focus{
+  background-color: rgb(230, 230, 255);
+}
+
+.form textarea {
+  width:370px;
+  height:150px;
+  border-radius: 3px;
+  border: 1px solid rgb(0, 0, 0); /*black*/
+  background-color: rgb(203, 244, 203); /*light green*/
+  padding: 5px 15px 5px 15px;
+  margin: 0 0 10px 0;
+}
+
+.form textarea:focus{
+  background-color: rgb(230, 230, 255);
+}
+
+button {
+  width: 100px;
+  height: 30px;
+  border: 1px solid rgb(0, 0, 0); /*black*/
+  border-radius: 3px;
+  background-color: rgb(255, 255, 255); /*white*/
+  -webkit-transition-property: border, color, background-color;
+  -webkit-transition-duration: 0.4s;
+  -o-transition-property: border, color, background-color;
+  -o-transition-duration: 0.4s;
+  -moz-transition-property: border, color, background-color;
+  -moz-transition-duration: 0.4s;
+  transition-property: border, color, background-color;
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  border: 1px solid rgb(255, 255, 255); /*white*/
+  color: rgb(255, 255, 255); /*white*/
+  background-color: rgb(0, 0, 0); /*black*/
+}
+
+button:active {
+  border: 1px solid grey; /*white*/
+}
+
+/*------------------------------------------------------------- price table */
+
+h1 {
+  padding-top: 6%;
+  text-align: center;
+}
+
+.priceTable {
+  width: 80%;
+  margin: 0% auto 5% auto;
+  border-collapse: collapse;
+  text-align: center;
+  height: 50px;
+}
+
+tr {
+  height: 3em;
+  background: rgba(0, 92, 230, 0.7); /*light orange*/
+}
+
+.tableHeader {
+  background: black;
+  font-size: 1.2em;
+}
+
+tr:nth-child(even) { 
+  background: rgba(0, 92, 230, 0.2);
+}
+
+tr { 
+  -ms-transition: 0.4s ease-in; /* not working */
+  -webkit-transition: 0.4s ease-in;
+  -moz-transition: 0.4s ease-in;
+  -o-transition: 0.4s ease-in;
+  transition: 0.4s ease-in;
+} 
+
+tr:hover:not(.tableHeader) {
+  -ms-transform: scale(1.1); /* not working */
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  transform: scale(1.1);
+  background-color: rgb(255, 255, 77); /* yellow */
+  color: black;
+  font-weight: bold;
+  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.5);
+}
+
+
+/*------------------------------------------------------------- Map in contact us */
+#map {
+  position: relative;
+  bottom: -64px;
+  border: 10px solid white;
+  width: 878px;
+  height: 230px;
+}
+
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+/*--------------------------------------------------------- On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text, .first {
+    font-size: 11px
+  }
+}/*end*/
+
+/*--------------------------------------------------------- Screen width less than 930px */
+@media only screen and (max-width: 930px) {
+
+#navTop #mainNav li {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+#navTop #mainNav li a {
+  width: 100%;
+}
+
+.item {
+  width: 146px;
+  height: 146px;
+}
+
+/*contact page setup*/
+.sendUs {
+  display: none;
+  }
+
+.contactInfo {
+  display: block;
+  width: 400px;
+  position: relative;
+  top: 10px;
+  float: left;
+  margin-left: 20%;
+  }
+
+.form {
+  position: relative;
+  left: 0;
+  top: 10px;
+  height: 10%;
+  display: block;
+  margin: auto;
+  clear: left;
+  }
+
+.form fieldset {
+  width: 400px;
+  margin-left: 20%
+  }
+
+#map {
+  position: relative;
+  width: 100%;
+  border: 1px solid white;
+  
+  }
+
+#contactMainContainer {
+  min-height: 1500px;
+  }
+  
+}/*end*/
+
+/*--------------------------------------------------------- Screen width less than 700px */
+@media only screen and (max-width: 700px) {
+	
+#powered {
+  position: relative;
+  top: 20%;
+  }
+
+#navBottomRight {
+  float: right;
+  }
+
+#mainLogo {
+  max-width: 100%;
+  height: auto; /*this efects map when screen width decreses. map lifts up around 50px*/
+  }
+  
+.mySlides {
+  margin: auto;
+  margin-top: 20%;
+  vertical-align: middle;
+}
+
+/*-------------------------------------------------- setting up images max-height when showing in dark background */
+.image {
+  max-height: 380px;
+  width: 100%;
+  
+}
+  
+.contactInfo {
+  margin-left: 5%;
+  }
+  
+.form fieldset {
+  width: 395px;
+  margin-left: 5%;
+  }
+  
+.form textarea {
+  width:235px;
+}
+  
+#map {
+  margin: auto;
+
+  }
+  
+}/*end*/
+
+/*--------------------------------------------------------- Screen width less than 460px */
+@media only screen and (max-width: 460px) {
+	
+#navBottomLeft ul li {
+  padding: 0.45em;
+  }
+  
+.slideshow-container {
+  top: 10%;
+}
+
+/*------------------------------------------------------ Next & previous buttons */
+.prev, .next {
+  background-color: rgba(255,255,255,0.5);
+  color: black;
+}
+
+/*------------------------------------------------------- On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(255,255,255,0.3);
+  color: black;
+}
+
+.contactInfo {
+  margin-left: 5%;
+}
+  
+.form fieldset {
+  width:277px;
+  margin-left: 5%;
+}
+
+.form textarea {
+  width:240px;
+}
+
+/*--------------------------------------------------------- Screen width less than 360px */
+@media only screen and (max-width: 360px) {
+	
+#navBottomLeft ul li {
+  padding: 0.45em;
+  }
+
+/*----------------------------------------------------- Slideshow container */
+
+
+.contactInfo {
+  margin-left: 0%;
+}
+  
+.form fieldset {
+  width:277px;
+  margin-left: 0%;
+}
+
+.form textarea {
+  width:240px;
+}
+  
+}/*end*/
+
+
+
+
+
+

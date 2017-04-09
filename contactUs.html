@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Contact us</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- To ensure proper rendering and touch zooming on mobile devices --> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>  <!-- jQuery library -->
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  <!-- Latest compiled JavaScript -->
+  <script src="scripts/main.js"></script>  <!--script file-->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDuIMvPqyw2jTIW5PQ8ml3sf1rKkFKkyoE&callback=myMap"></script> <!-- API AIzaSyDuIMvPqyw2jTIW5PQ8ml3sf1rKkFKkyoE -->
+   <link rel="icon" href="images/logo.png" />
+  <link rel="stylesheet" href="styles/main.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- social icons library -->
+</head>
+
+<body>
+<div class="mainContainer" id="contactMainContainer" style="height: 1100px; background-color: rgb(214, 252, 219);">
+<header>
+  <img id="mainLogo" src="images/mainLogo.png" alt="Main Logo" />
+</header>
+
+<!--Top navifation-->
+<nav id="navTop">
+  <ul id="mainNav">
+    <li><a href="home.html"><i class="fa fa-home"></i> Home</a></li>
+    <li><a href="galery.html"><i class="fa fa-photo"></i> Galery</a></li>
+    <li><a href="prices.html"><i class="fa fa-star-o"></i> Prices</a></li>
+    <li><a class="selected" href="contactUs.html"><i class="fa fa-envelope"></i> Contact us</a></li>
+  </ul>
+</nav>
+ 
+<div id="contactContent">
+
+<!--"send us a message" image-->
+<img alt="image" class="sendUs" src="images/sendUs.png" style="width: 200px; height: 200px;"/>
+
+<!--web contact info-->
+<div class="contactInfo">
+  <fieldset><legend>E-mail</legend>
+    <span>info@mantasramanauskas.com</span>
+  </fieldset>
+  
+  <fieldset><legend>Phone</legend>
+     <span>+447741076331</span>
+  </fieldset>
+  
+  <fieldset><legend>Address</legend>
+     <span>High Street,<br>Bishop Court,<br>  Slough,  Berkshire,<br>  SL1 1JU</span>
+  </fieldset>
+</div>
+
+<!--form for visitors to fill in-->
+<div class="form" >
+  <fieldset><legend>Personal information</legend>
+    <span>Name </span>
+    <input class="inputField" type="text" name="name" placeholder="Type in your Name" autofocus required/><br>
+    <span>E-mail </span>
+    <input class="inputField" type="email" name="email" placeholder="Type in your e-mail" required/><br>
+    <span>Phone </span>
+	<input class="inputField" type="phone" name="phone" placeholder="Type in your phone number" required/><br>
+    <span>Subject </span>
+    <input class="inputField" type="text" name="subject" placeholder="Type in the subject" required/><br>
+  </fieldset>
+  
+  <fieldset><legend>Message</legend>
+    <textarea placeholder="Type in your message here..."  required></textarea><br>
+    <button>Send</button>
+  </fieldset>
+</div>
+
+<!--map-->
+<div id="map"></div>
+
+</div>
+</div>
+
+<footer>
+
+<!--nav in footer-->
+<nav id="navBottomLeft">
+  <ul id="mainNav">
+    <li><a href="home.html">Home</a></li>
+	<li>|</li>
+    <li><a href="galery.html">Galery</a></li>
+    <li>|</li>	
+    <li><a href="prices.html">Prices</a></li>
+	<li>|</li>
+    <li><a href="contactUs.html">Contact us</a></li>	
+  </ul>
+</nav>
+ 
+<!--social webs icons/links in footer--> 
+<nav id="navBottomRight">
+  <ul id="mainNav">
+   <li><a href="https://www.youtube.com" target="_blank" class="soc fa fa-youtube"></a></li>
+    <li><a href="https://www.instagram.com" target="_blank" class="soc fa fa-instagram"></a></li>
+    <li><a href="https://www.twitter.com" target="_blank" class="soc fa fa-twitter"></a></li>
+	<li><a href="https://www.facebook.com" target="_blank" class="soc fa fa-facebook"></a></li>
+  </ul>
+</nav>
+
+<div id="powered">Powered by <a href="http://www.mantasramanauskas.com" target="_blank"> M.R.</a></div>
+
+</footer>
+
+</body>
